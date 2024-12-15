@@ -1,0 +1,574 @@
+name: Autograding Tests
+'on':
+  - push
+  - repository_dispatch
+
+permissions:
+  checks: write
+  actions: read
+  contents: read
+
+jobs:
+  run-autograding-tests:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-classroom[bot]'
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: testDoubleList1
+      id: testDoubleList1
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testDoubleList1
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testDoubleList1
+        timeout: 10
+        max-score: 1
+
+    - name: testDoubleList2
+      id: testDoubleList2
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testDoubleList2
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testDoubleList2
+        timeout: 10
+        max-score: 1
+
+    - name: testDoubleList3
+      id: testDoubleList3
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testDoubleList3
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testDoubleList3
+        timeout: 10
+        max-score: 1
+
+    - name: testDoubleList4
+      id: testDoubleList4
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testDoubleList4
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testDoubleList4
+        timeout: 10
+        max-score: 1
+
+    - name: testDoubleList5
+      id: testDoubleList5
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testDoubleList5
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testDoubleList5
+        timeout: 10
+        max-score: 1
+
+    - name: testInterleave1
+      id: testInterleave1
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testInterleave1
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testInterleave1
+        timeout: 10
+        max-score: 1
+
+    - name: testInterleave2
+      id: testInterleave2
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testInterleave2
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testInterleave2
+        timeout: 10
+        max-score: 1
+
+    - name: testInterleave3
+      id: testInterleave3
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testInterleave3
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testInterleave3
+        timeout: 10
+        max-score: 1
+
+    - name: testInterleave4
+      id: testInterleave4
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testInterleave4
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testInterleave4
+        timeout: 10
+        max-score: 1
+
+    - name: testInterleave5
+      id: testInterleave5
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testInterleave5
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testInterleave5
+        timeout: 10
+        max-score: 1
+
+    - name: testInterleave6
+      id: testInterleave6
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testInterleave6
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testInterleave6
+        timeout: 10
+        max-score: 1
+
+    - name: testInterleave7
+      id: testInterleave7
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testInterleave7
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testInterleave7
+        timeout: 10
+        max-score: 1
+
+    - name: testInterleave8
+      id: testInterleave8
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testInterleave8
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testInterleave8
+        timeout: 10
+        max-score: 1
+
+    - name: testMinToFront1
+      id: testMinToFront1
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testMinToFront1
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testMinToFront1
+        timeout: 10
+        max-score: 1
+
+    - name: testMinToFront2
+      id: testMinToFront2
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testMinToFront2
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testMinToFront2
+        timeout: 10
+        max-score: 1
+
+    - name: testMinToFront3
+      id: testMinToFront3
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testMinToFront3
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testMinToFront3
+        timeout: 10
+        max-score: 1
+
+    - name: testMinToFront4
+      id: testMinToFront4
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testMinToFront4
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testMinToFront4
+        timeout: 10
+        max-score: 1
+
+    - name: testMinToFront5
+      id: testMinToFront5
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testMinToFront5
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testMinToFront5
+        timeout: 10
+        max-score: 1
+
+    - name: testRemoveDuplicates1
+      id: testRemoveDuplicates1
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testRemoveDuplicates1
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testRemoveDuplicates1
+        timeout: 10
+        max-score: 1
+
+    - name: testRemoveDuplicates2
+      id: testRemoveDuplicates2
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testRemoveDuplicates2
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testRemoveDuplicates2
+        timeout: 10
+        max-score: 1
+
+    - name: testRemoveDuplicates3
+      id: testRemoveDuplicates3
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testRemoveDuplicates3
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testRemoveDuplicates3
+        timeout: 10
+        max-score: 1
+
+    - name: testRemoveDuplicates4
+      id: testRemoveDuplicates4
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testRemoveDuplicates4
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testRemoveDuplicates4
+        timeout: 10
+        max-score: 1
+
+    - name: testRemoveDuplicates5
+      id: testRemoveDuplicates5
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testRemoveDuplicates5
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testRemoveDuplicates5
+        timeout: 10
+        max-score: 1
+
+    - name: testRemoveEvenLength1
+      id: testRemoveEvenLength1
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testRemoveEvenLength1
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testRemoveEvenLength1
+        timeout: 10
+        max-score: 1
+
+    - name: testRemoveEvenLength2
+      id: testRemoveEvenLength2
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testRemoveEvenLength2
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testRemoveEvenLength2
+        timeout: 10
+        max-score: 1
+
+    - name: testRemoveEvenLength3
+      id: testRemoveEvenLength3
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testRemoveEvenLength3
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testRemoveEvenLength3
+        timeout: 10
+        max-score: 1
+
+    - name: testRemoveEvenLength4
+      id: testRemoveEvenLength4
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testRemoveEvenLength4
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testRemoveEvenLength4
+        timeout: 10
+        max-score: 1
+
+    - name: testRemoveInRange1
+      id: testRemoveInRange1
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testRemoveInRange1
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testRemoveInRange1
+        timeout: 10
+        max-score: 1
+
+    - name: testRemoveInRange2
+      id: testRemoveInRange2
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testRemoveInRange2
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testRemoveInRange2
+        timeout: 10
+        max-score: 1
+
+    - name: testRemoveInRange3
+      id: testRemoveInRange3
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testRemoveInRange3
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testRemoveInRange3
+        timeout: 10
+        max-score: 1
+
+    - name: testRemoveInRange4
+      id: testRemoveInRange4
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testRemoveInRange4
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testRemoveInRange4
+        timeout: 10
+        max-score: 1
+
+    - name: testRemoveInRange5
+      id: testRemoveInRange5
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testRemoveInRange5
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testRemoveInRange5
+        timeout: 10
+        max-score: 1
+
+    - name: testRemoveShorterStrings1
+      id: testRemoveShorterStrings1
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testRemoveShorterStrings1
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testRemoveShorterStrings1
+        timeout: 10
+        max-score: 1
+
+    - name: testRemoveShorterStrings2
+      id: testRemoveShorterStrings2
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testRemoveShorterStrings2
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testRemoveShorterStrings2
+        timeout: 10
+        max-score: 1
+
+    - name: testRemoveShorterStrings3
+      id: testRemoveShorterStrings3
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testRemoveShorterStrings3
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testRemoveShorterStrings3
+        timeout: 10
+        max-score: 1
+
+    - name: testRemoveShorterStrings4
+      id: testRemoveShorterStrings4
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testRemoveShorterStrings4
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testRemoveShorterStrings4
+        timeout: 10
+        max-score: 1
+
+    - name: testRemoveShorterStrings5
+      id: testRemoveShorterStrings5
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testRemoveShorterStrings5
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testRemoveShorterStrings5
+        timeout: 10
+        max-score: 1
+
+    - name: testStutter1
+      id: testStutter1
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testStutter1
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testStutter1
+        timeout: 10
+        max-score: 1
+
+    - name: testStutter2
+      id: testStutter2
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testStutter2
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testStutter2
+        timeout: 10
+        max-score: 1
+
+    - name: testStutter3
+      id: testStutter3
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testStutter3
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testStutter3
+        timeout: 10
+        max-score: 1
+
+    - name: testStutter4
+      id: testStutter4
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testStutter4
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testStutter4
+        timeout: 10
+        max-score: 1
+
+    - name: testStutter5
+      id: testStutter5
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testStutter5
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testStutter5
+        timeout: 10
+        max-score: 1
+
+    - name: testStutter6
+      id: testStutter6
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testStutter6
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testStutter6
+        timeout: 10
+        max-score: 1
+
+    - name: testStutter7
+      id: testStutter7
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testStutter7
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testStutter7
+        timeout: 10
+        max-score: 1
+
+    - name: testSwapPairs1
+      id: testSwapPairs1
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testSwapPairs1
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testSwapPairs1
+        timeout: 10
+        max-score: 1
+
+    - name: testSwapPairs2
+      id: testSwapPairs2
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testSwapPairs2
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testSwapPairs2
+        timeout: 10
+        max-score: 1
+
+    - name: testSwapPairs3
+      id: testSwapPairs3
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testSwapPairs3
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testSwapPairs3
+        timeout: 10
+        max-score: 1
+
+    - name: testSwapPairs4
+      id: testSwapPairs4
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testSwapPairs4
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testSwapPairs4
+        timeout: 10
+        max-score: 1
+
+    - name: testSwapPairs5
+      id: testSwapPairs5
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testSwapPairs5
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testSwapPairs5
+        timeout: 10
+        max-score: 1
+
+    - name: testSwapPairs6
+      id: testSwapPairs6
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: testSwapPairs6
+        setup-command: ''
+        command: gradle test --tests PracticeITArrayListTest.testSwapPairs6
+        timeout: 10
+        max-score: 1
+
+    # Autograding Reporter
+    - name: Autograding Reporter
+      uses: classroom-resources/autograding-grading-reporter@v1
+      env:
+        TESTDOUBLELIST1_RESULTS: "${{steps.testDoubleList1.outputs.result}}"
+        TESTDOUBLELIST2_RESULTS: "${{steps.testDoubleList2.outputs.result}}"
+        TESTDOUBLELIST3_RESULTS: "${{steps.testDoubleList3.outputs.result}}"
+        TESTDOUBLELIST4_RESULTS: "${{steps.testDoubleList4.outputs.result}}"
+        TESTDOUBLELIST5_RESULTS: "${{steps.testDoubleList5.outputs.result}}"
+        TESTINTERLEAVE1_RESULTS: "${{steps.testInterleave1.outputs.result}}"
+        TESTINTERLEAVE2_RESULTS: "${{steps.testInterleave2.outputs.result}}"
+        TESTINTERLEAVE3_RESULTS: "${{steps.testInterleave3.outputs.result}}"
+        TESTINTERLEAVE4_RESULTS: "${{steps.testInterleave4.outputs.result}}"
+        TESTINTERLEAVE5_RESULTS: "${{steps.testInterleave5.outputs.result}}"
+        TESTINTERLEAVE6_RESULTS: "${{steps.testInterleave6.outputs.result}}"
+        TESTINTERLEAVE7_RESULTS: "${{steps.testInterleave7.outputs.result}}"
+        TESTINTERLEAVE8_RESULTS: "${{steps.testInterleave8.outputs.result}}"
+        TESTMINTTOFRONT1_RESULTS: "${{steps.testMinToFront1.outputs.result}}"
+        TESTMINTTOFRONT2_RESULTS: "${{steps.testMinToFront2.outputs.result}}"
+        TESTMINTTOFRONT3_RESULTS: "${{steps.testMinToFront3.outputs.result}}"
+        TESTMINTTOFRONT4_RESULTS: "${{steps.testMinToFront4.outputs.result}}"
+        TESTMINTTOFRONT5_RESULTS: "${{steps.testMinToFront5.outputs.result}}"
+        TESTREMOVEDUPLICATES1_RESULTS: "${{steps.testRemoveDuplicates1.outputs.result}}"
+        TESTREMOVEDUPLICATES2_RESULTS: "${{steps.testRemoveDuplicates2.outputs.result}}"
+        TESTREMOVEDUPLICATES3_RESULTS: "${{steps.testRemoveDuplicates3.outputs.result}}"
+        TESTREMOVEDUPLICATES4_RESULTS: "${{steps.testRemoveDuplicates4.outputs.result}}"
+        TESTREMOVEDUPLICATES5_RESULTS: "${{steps.testRemoveDuplicates5.outputs.result}}"
+        TESTREMOVEEVENLENGTH1_RESULTS: "${{steps.testRemoveEvenLength1.outputs.result}}"
+        TESTREMOVEEVENLENGTH2_RESULTS: "${{steps.testRemoveEvenLength2.outputs.result}}"
+        TESTREMOVEEVENLENGTH3_RESULTS: "${{steps.testRemoveEvenLength3.outputs.result}}"
+        TESTREMOVEEVENLENGTH4_RESULTS: "${{steps.testRemoveEvenLength4.outputs.result}}"
+        TESTREMOVEINRANGE1_RESULTS: "${{steps.testRemoveInRange1.outputs.result}}"
+        TESTREMOVEINRANGE2_RESULTS: "${{steps.testRemoveInRange2.outputs.result}}"
+        TESTREMOVEINRANGE3_RESULTS: "${{steps.testRemoveInRange3.outputs.result}}"
+        TESTREMOVEINRANGE4_RESULTS: "${{steps.testRemoveInRange4.outputs.result}}"
+        TESTREMOVEINRANGE5_RESULTS: "${{steps.testRemoveInRange5.outputs.result}}"
+        TESTREMOVESHORTERSTRINGS1_RESULTS: "${{steps.testRemoveShorterStrings1.outputs.result}}"
+        TESTREMOVESHORTERSTRINGS2_RESULTS: "${{steps.testRemoveShorterStrings2.outputs.result}}"
+        TESTREMOVESHORTERSTRINGS3_RESULTS: "${{steps.testRemoveShorterStrings3.outputs.result}}"
+        TESTREMOVESHORTERSTRINGS4_RESULTS: "${{steps.testRemoveShorterStrings4.outputs.result}}"
+        TESTREMOVESHORTERSTRINGS5_RESULTS: "${{steps.testRemoveShorterStrings5.outputs.result}}"
+        TESTSTUTTER1_RESULTS: "${{steps.testStutter1.outputs.result}}"
+        TESTSTUTTER2_RESULTS: "${{steps.testStutter2.outputs.result}}"
+        TESTSTUTTER3_RESULTS: "${{steps.testStutter3.outputs.result}}"
+        TESTSTUTTER4_RESULTS: "${{steps.testStutter4.outputs.result}}"
+        TESTSTUTTER5_RESULTS: "${{steps.testStutter5.outputs.result}}"
+        TESTSTUTTER6_RESULTS: "${{steps.testStutter6.outputs.result}}"
+        TESTSTUTTER7_RESULTS: "${{steps.testStutter7.outputs.result}}"
+        TESTSWAPPAIRS1_RESULTS: "${{steps.testSwapPairs1.outputs.result}}"
+        TESTSWAPPAIRS2_RESULTS: "${{steps.testSwapPairs2.outputs.result}}"
+        TESTSWAPPAIRS3_RESULTS: "${{steps.testSwapPairs3.outputs.result}}"
+        TESTSWAPPAIRS4_RESULTS: "${{steps.testSwapPairs4.outputs.result}}"
+        TESTSWAPPAIRS5_RESULTS: "${{steps.testSwapPairs5.outputs.result}}"
+        TESTSWAPPAIRS6_RESULTS: "${{steps.testSwapPairs6.outputs.result}}"
+      with:
+        runners: testDoubleList1, testDoubleList2, testDoubleList3, testDoubleList4, testDoubleList5, testInterleave1, testInterleave2, testInterleave3, testInterleave4, testInterleave5, testInterleave6, testInterleave7, testInterleave8, testMinToFront1, testMinToFront2, testMinToFront3, testMinToFront4, testMinToFront5, testRemoveDuplicates1, testRemoveDuplicates2, testRemoveDuplicates3, testRemoveDuplicates4, testRemoveDuplicates5, testRemoveEvenLength1, testRemoveEvenLength2, testRemoveEvenLength3, testRemoveEvenLength4, testRemoveInRange1, testRemoveInRange2, testRemoveInRange3, testRemoveInRange4, testRemoveInRange5, testRemoveShorterStrings1, testRemoveShorterStrings2, testRemoveShorterStrings3, testRemoveShorterStrings4, testSwapPairs1, testSwapPairs2, testSwapPairs3, testSwapPairs4, testSwapPairs5, testSwapPairs6testDoubleList1, testDoubleList2, testDoubleList3, testDoubleList4, testDoubleList5, testInterleave1, testInterleave2, testInterleave3, testInterleave4, testInterleave5, testInterleave6, testInterleave7, testInterleave8, testMinToFront1, testMinToFront2, testMinToFront3, testMinToFront4, testMinToFront5, testRemoveDuplicates1, testRemoveDuplicates2, testRemoveDuplicates3, testRemoveDuplicates4, testRemoveDuplicates5, testRemoveEvenLength1, testRemoveEvenLength2, testRemoveEvenLength3, testRemoveEvenLength4, testRemoveInRange1, testRemoveInRange2, testRemoveInRange3, testRemoveInRange4, testRemoveInRange5, testRemoveShorterStrings1, testRemoveShorterStrings2, testRemoveShorterStrings3, testRemoveShorterStrings4, testRemoveShorterStrings5, testStutter1, testStutter2, testStutter3, testStutter4, testStutter5, testStutter6, testStutter7, testSwapPairs1, testSwapPairs2, testSwapPairs3, testSwapPairs4, testSwapPairs5, testSwapPairs6
